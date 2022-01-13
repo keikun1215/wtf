@@ -10,13 +10,14 @@
                 }else{
                     //条件に一致しない場合(メールアドレスが入力されている場合)
                     return true;    //送信ボタン本来の動作を実行します
+                    window.location.href = 'パス名';
                 }
             }
         </script>
     </head>
     <body>
         <form action="index.html" method="get" name="mail_form">
-            WTF協会の名前は？ <br> <input type="password" name="mail">
+            WTF協会の名前は？（英語） <br> <input type="password" name="mail">
             <input type="submit" value="回答" onClick="return check();">
         </form>
     </body>
