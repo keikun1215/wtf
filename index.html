@@ -6,7 +6,7 @@
               <script type="text/javascript">
             function check(){
                 if (mail_form.mail.value = "World_Trust_Future_Association"){
-                    window.location.href = '/wtf.html';
+                    window.location.href = './wtf.html';
 
                 }else{
                     alert("違う。");    //エラーメッセージを出力
@@ -18,7 +18,7 @@
     <body>
         <form action="index.html" method="get" name="mail_form">
             WTF協会の名前は？（英語） <br> <input type="password" name="mail">
-            <a href="./wtf.html"><input type="submit" value="回答" onClick="return check();"></a>
+            <a href="./wtf.html"><input type="submit" value="回答" onClick="check();"></a>
         </form>
     </body>
 </html>
