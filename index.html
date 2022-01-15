@@ -3,14 +3,14 @@
     <head>
               <script type="text/javascript">
             function check(){
-                if (mail_form.mail.value != "World Trust Future Association"){
+                if (mail_form.mail.value != "World_Trust_Future_Association"){
                     //条件に一致する場合(メールアドレスが空の場合)
                     alert("違う。");    //エラーメッセージを出力
                     return false;    //送信ボタン本来の動作をキャンセルします
                 }else{
                     //条件に一致しない場合(メールアドレスが入力されている場合)
                     return true;    //送信ボタン本来の動作を実行します
-                    window.open('./wtf.html', '_blank');
+                    window.location.href('./wtf.html');
                 }
             }
         </script>
