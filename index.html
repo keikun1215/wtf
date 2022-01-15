@@ -4,21 +4,53 @@
         <meta charset="utf-8">
         <title> Google </title>
               <script type="text/javascript">
-            function check(){
-                if (mail_form.mail.value = "World_Trust_Future_Association"){
-                    window.location.href = './wtf.html';
+<!--
 
-                }else{
-                    alert("違う。");    //エラーメッセージを出力
-                    return false;    //送信ボタン本来の動作をキャンセルします
-                }
-            }
-        </script>
+function disp(){
+
+	// 入力ダイアログを表示 ＋ 入力内容を user に代入
+	user = window.prompt("ログイン。ユーザー名:パスワードの形。\n例:[exampleuser001:19132]", "");
+
+	// 入力内容が tama の場合は example_tama.html にジャンプ
+	if(user == 'keikun1215:我らが祖国万歳！'){
+
+		location.href = "wtf.html";
+
+	}
+
+	// 入力内容が hana の場合は example_hana.html にジャンプ
+	else if(user == 'souchan1226:undefined'){
+
+		location.href = "example_hana.html";
+
+	}
+    else if(user == 'exampleuser001:19132'){
+        window.alert('サンプルをコピーして何かあるとでも？')
+	}
+
+	// 入力内容が一致しない場合は警告ダイアログを表示
+	else if(user != "" && user != null){
+
+		window.alert(user + 'は無効なログインだ。');
+
+	}
+
+	// 空の場合やキャンセルした場合は警告ダイアログを表示
+	else{
+
+		window.alert('入力されていない。');
+
+	}
+
+}
+
+// -->
+</script>
     </head>
     <body>
         <form action="index.html" method="get" name="mail_form">
             WTF協会の名前は？（英語） <br> <input type="password" name="mail">
-            <a href="./wtf.html"><input type="submit" value="回答" onClick="check();"></a>
+            <p><input type="button" value="ログイン" onClick="disp()"></p>
         </form>
     </body>
 </html>
